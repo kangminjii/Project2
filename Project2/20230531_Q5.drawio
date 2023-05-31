@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-31T08:50:17.000Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="ssn5gx7MuS_A-eBSakb6" version="21.3.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-31T09:05:36.745Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="eQrzdmzouJEJSr2EhCMN" version="21.3.4" type="github">
   <diagram name="페이지-1" id="izTYaRDSlC9kUoO19rm3">
-    <mxGraphModel dx="593" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -343,7 +343,7 @@
         <mxCell id="k9izTr5_g7_jA_bxBwDo-111" value="int count4 = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="1520" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k9izTr5_g7_jA_bxBwDo-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.454;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-113" target="k9izTr5_g7_jA_bxBwDo-115">
+        <mxCell id="k9izTr5_g7_jA_bxBwDo-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-113" target="k9izTr5_g7_jA_bxBwDo-136">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-113" value="이전 소수로 판단&lt;br&gt;&amp;amp;&lt;br&gt;제곱근 n 이하의 모든 소수로 나누었을 때 판단&lt;br&gt;int j : 1, 1, total4" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
@@ -353,46 +353,46 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-115" value="performance4++" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="1700" width="120" height="40" as="geometry" />
+          <mxGeometry x="485" y="1880" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-116" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-118" target="k9izTr5_g7_jA_bxBwDo-121">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="620" y="1830" as="targetPoint" />
+            <mxPoint x="700" y="1990" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-117" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-118">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="550" y="1890" as="targetPoint" />
+            <mxPoint x="550" y="2070" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-118" value="i % primeNumber2[j] == 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="470" y="1770" width="160" height="80" as="geometry" />
+          <mxGeometry x="470" y="1950" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-121" target="k9izTr5_g7_jA_bxBwDo-128">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="1920" as="sourcePoint" />
-            <mxPoint x="610" y="1920" as="targetPoint" />
+            <mxPoint x="760" y="2015" as="sourcePoint" />
+            <mxPoint x="610" y="2100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-120" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="500" y="2330" width="100" height="60" as="geometry" />
+          <mxGeometry x="500" y="2510" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-121" value="count4++,&lt;br&gt;break" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="700" y="1785" width="120" height="50" as="geometry" />
+          <mxGeometry x="700" y="1965" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-122" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="500" y="1200" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-123" value="이전 소수로 판단&lt;br style=&quot;border-color: var(--border-color); background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;background-color: rgb(251, 251, 251);&quot;&gt;&amp;amp;&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;background-color: rgb(251, 251, 251);&quot;&gt;제곱근 n 이하의 모든 소수로 나누었을 때 판단&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
-          <mxGeometry x="470" y="2170" width="160" height="60" as="geometry" />
+          <mxGeometry x="470" y="2350" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-124" value="소수 판별" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
-          <mxGeometry x="500" y="2250" width="100" height="50" as="geometry" />
+          <mxGeometry x="500" y="2430" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-125" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-123" target="k9izTr5_g7_jA_bxBwDo-124">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="620" y="2100" as="sourcePoint" />
-            <mxPoint x="670" y="2050" as="targetPoint" />
+            <mxPoint x="620" y="2280" as="sourcePoint" />
+            <mxPoint x="670" y="2230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-126" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-128" target="k9izTr5_g7_jA_bxBwDo-131">
@@ -401,34 +401,48 @@
         <mxCell id="k9izTr5_g7_jA_bxBwDo-127" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-128" target="k9izTr5_g7_jA_bxBwDo-132">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="440" y="1930" />
-              <mxPoint x="440" y="2120" />
+              <mxPoint x="440" y="2110" />
+              <mxPoint x="440" y="2300" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-128" value="count4 == 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="510" y="1890" width="80" height="80" as="geometry" />
+          <mxGeometry x="510" y="2070" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-129" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-124" target="k9izTr5_g7_jA_bxBwDo-120">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="310" y="2080" as="sourcePoint" />
-            <mxPoint x="360" y="2030" as="targetPoint" />
+            <mxPoint x="310" y="2260" as="sourcePoint" />
+            <mxPoint x="360" y="2210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-131" target="k9izTr5_g7_jA_bxBwDo-132">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-131" value="primeNumber[total4++] = i" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="475" y="2010" width="150" height="50" as="geometry" />
+          <mxGeometry x="475" y="2190" width="150" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-132" value="cout &amp;lt;&amp;lt; performance4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="2090" width="120" height="60" as="geometry" />
+          <mxGeometry x="490" y="2270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k9izTr5_g7_jA_bxBwDo-133" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.507;exitY=0.886;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-132" target="k9izTr5_g7_jA_bxBwDo-123">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="590" y="2250" as="sourcePoint" />
-            <mxPoint x="640" y="2200" as="targetPoint" />
+            <mxPoint x="590" y="2430" as="sourcePoint" />
+            <mxPoint x="640" y="2380" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="k9izTr5_g7_jA_bxBwDo-141" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-136" target="k9izTr5_g7_jA_bxBwDo-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k9izTr5_g7_jA_bxBwDo-142" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k9izTr5_g7_jA_bxBwDo-136">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="545" y="2050" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="441" y="1714" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k9izTr5_g7_jA_bxBwDo-136" value="primeNumber2[j] &amp;lt;= sqrt(i)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="1674" width="160" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
