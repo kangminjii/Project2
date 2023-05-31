@@ -1,0 +1,3 @@
+이름 : minji
+직함 : student
+bop id : apap
