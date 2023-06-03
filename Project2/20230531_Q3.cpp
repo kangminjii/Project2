@@ -46,24 +46,29 @@
 //		switch (menu)
 //		{
 //			case 'a':
-//				cout << "이름, 직함, bop id를 입력해주세요 : ";
+//				cout << "이름, 직함, bop id를 입력해주세요 : " << endl;
 //				cin.getline(fullName, strSize);
 //				cin.getline(title, strSize);
 //				cin.getline(bopId, strSize);
 //				outfile << fullName << endl;
 //				outfile << title << endl;
 //				outfile << bopId << endl;
-//				
 //				break;
+//
 //			case 'b':
-//				while (infile.good())
+//				while (1)
 //				{
 //					getline(infile, str);
+//					count++;
 //					if (count % 3 == 0)
 //					{
-//
+//						cout << fullName << endl;
 //					}
-//					cout << fullName << endl;
+//					if (infile.eof())
+//					{
+//						cout << "끝!" << endl;
+//						break;
+//					}
 //				}
 //				break;
 //			case 'c':
