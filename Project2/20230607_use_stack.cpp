@@ -2,12 +2,7 @@
 #include <stdio.h>
 #include "20230607_stack.h"
 
-/*
-Q4. p.140 실습 4-1의 헤더 파일을 참고하여 p.148 실습 4-3의 코드가 작동하도록 프로그램을 작성하라.
-	p.148 연습문제 1번의 내용처럼.
-	제공하는 모든 함수를 사용하도록 프로그램을 수정하라. (clear, search)
-*/
-
+// main.cpp
 using namespace std;
 
 int main()
@@ -63,7 +58,6 @@ int main()
 			break;
 		}
 	}
-
 	Terminate(&s);
 	return 0;
 }
