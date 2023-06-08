@@ -1,10 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include "20230607_Q4.h"
+#include "20230607_stack.h"
 
 /*
 Q4. p.140 실습 4-1의 헤더 파일을 참고하여 p.148 실습 4-3의 코드가 작동하도록 프로그램을 작성하라.
-	p.148 연습문제 1번의 내용처럼. 
+	p.148 연습문제 1번의 내용처럼.
 	제공하는 모든 함수를 사용하도록 프로그램을 수정하라. (clear, search)
 */
 
@@ -35,26 +35,28 @@ int main()
 			if (Push(&s, x) == -1)
 				puts("\a오류: 푸시에 실패했습니다.");
 			break;
-
 		case 2: // 팝
 			if (Pop(&s, &x) == -1)
 				puts("\a오류: 팝에 실패했습니다.");
 			else
 				printf("팝 데이터는 %d입니다.\n", x);
 			break;
-
 		case 3: // 피크
 			if (Peek(&s, &x) == -1)
 				puts("\a오류: 피크에 실패했습니다.");
 			else
 				printf("피크 데이터는 %d입니다.\n", x);
 			break;
-		
 		case 4: // 클리어
-			
+			Clear(&s);
 			break;
 		case 5: // 서치
-			
+			printf("찾고 싶은 데이터: ");
+			scanf("%d", &x);
+			if (Search(&s, x) == -1)
+				printf("서치 데이터 %d가 존재하지 않습니다.\n", x);
+			else
+				printf("서치 데이터 %d가 존재합니다.\n", x);
 			break;
 		case 6: // 출력
 			Print(&s);
