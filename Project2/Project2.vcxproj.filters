@@ -168,9 +168,6 @@
     <ClCompile Include="20230608_use_queue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="asdjfsaj.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20230607_stock.h">
