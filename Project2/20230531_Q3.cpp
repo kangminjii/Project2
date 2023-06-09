@@ -10,7 +10,6 @@
 //	c. 직함 열람
 //	.. 
 //	q. 종료
-//
 //*/
 //
 //using namespace std;
@@ -21,28 +20,33 @@
 //	char fullName[strSize];
 //	char title[strSize];
 //	char bopId[strSize];
+//
 //	char menu;
 //	string str;
 //	int count = 0;
 //
-//	ofstream outfile;
-//	outfile.open("bop.txt");
+//	
 //
-//	ifstream infile;
-//	infile.open("bop.txt");
-//	if (!infile.is_open())
-//	{
-//		cout << "file is not open" << endl;
-//		return 0;
-//	}
+//	
 //
 //	while (1)
 //	{
 //		cout << "a. 회원등록\t b. 실명 열람\t c. 직함 열람\t d. bop ID 열람\t q. 종료" << endl;
 //		cout << "원하는 것을 선택하십시오 : ";
 //		cin >> menu;
-//		cin.get();
+//		//cin.get();
 //		
+//		ofstream outfile;
+//		outfile.open("bop.txt");
+//
+//		ifstream infile;
+//		infile.open("bop.txt");
+//		if (!infile.is_open())
+//		{
+//			cout << "file is not open" << endl;
+//			return 0;
+//		}
+//
 //		switch (menu)
 //		{
 //			case 'a':
@@ -53,10 +57,10 @@
 //				outfile << fullName << endl;
 //				outfile << title << endl;
 //				outfile << bopId << endl;
+//				outfile.close();
 //				break;
-//
 //			case 'b':
-//				while (1)
+//				while (infile.good())
 //				{
 //					getline(infile, str);
 //					count++;
@@ -84,15 +88,6 @@
 //	}
 //	
 //
-//	outfile.close();
-//	
-//
-//
-//
-//	
-//	
-//	
-//
-//
+//	//outfile.close();
 //
 //}
