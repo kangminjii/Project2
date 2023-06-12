@@ -10,7 +10,7 @@ Q2. ex) x,y,z : 1 2 3
 		두 벡터의 사이각 : 83.0023
 */
 
-#include "20230609_Q2.h"
+#include "20230609_vector.h"
 
 using namespace std;
 

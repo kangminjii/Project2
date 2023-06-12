@@ -1,4 +1,4 @@
-#include "20230609_Q2.h"
+#include "20230609_vector.h"
 #include <cmath>
 
 cVector3::cVector3()
@@ -61,22 +61,23 @@ cVector3 cVector3::operator/(const cVector3& v1) const
 
 double cVector3::length()
 {
-	return sqrt(pow(x, 2) + pow(y, 2) + pow(x, 2));
+	return sqrt(x * x + y * y + z * z);
 }
 
 cVector3 cVector3::Normalize()
 {
 	cVector3 temp;
-	temp.x = x / this->length();
-	temp.y = y / this->length();
-	temp.z = z / this->length();
+
+	temp.x = x / length();
+	temp.y = y / length();
+	temp.z = z / length();
 	
 	return temp;
 }
 
 double cVector3::Dot(cVector3& v1)
 {
-	return (x * v1.x + y * v1.y + z * v1.z);
+	return (x * v1.x) + (y * v1.y) + (z * v1.z);
 }
 
 cVector3 cVector3::Cross(cVector3& v1)
