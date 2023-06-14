@@ -33,93 +33,160 @@ using namespace std;
 
 int main()
 {
-	char ch[200];
-	char temp, x;
+	char ch[100]; // 기호
+	string str = ""; // 숫자
+	char temp = ' ';
+	char x;
 
+	// 후위 표기식 만들기
 	ifstream file("calc.txt");
-	if (!file.is_open())	
+	if (!file.is_open())
 	{
 		cout << "파일을 열 수 없습니다." << endl;
 		return 1;
 	}
 
 	stackCalculate Operator_Stack, Operator_Queue;
-	
-	if (Operator_Stack.InitializeStack(64) == "0")
+
+	if (Operator_Stack.InitializeStack(100) == "0")
 	{
 		puts("스택 생성에 실패했습니다.");
 		return 1;
 	}
-	if (Operator_Queue.InitializeQueue(64) == "0")
+	if (Operator_Queue.InitializeQueue(100) == "0")
 	{
 		puts("큐 생성에 실패했습니다.");
 		return 1;
 	}
-	int i = 0;
-	while (file.good())
-	{
-		file.get(ch[i]);
+	
+	file.getline(ch, strlen(ch) + 1);
+	ch[strlen(ch)] = '\0';
 
+
+	int i = 0;
+	while (ch[i] != '\0')
+	{
 		if (ch[i] == '(')
 		{
-			if (Operator_Stack.Push(ch[i]) == "-1")
-			{
-				puts("\a오류: 푸시에 실패했습니다.");
-				break;
-			}
-			
-			Operator_Stack.PrintStack();
+			Operator_Stack.Push(ch[i]);
 		}
 		else if (ch[i] == ')')
 		{
-			do
+			temp = ' ';
+			while (temp != '(')
 			{
 				Operator_Stack.Pop(&temp);
-				Operator_Queue.Enque(temp);
-			} while (temp != '(');
-
-			Operator_Stack.Pop(&temp);
-
-			Operator_Stack.PrintStack();
-			Operator_Queue.PrintQueue();
+				if (temp == '(')	break;
+				else				Operator_Queue.Enque(temp);
+			}
 		}
 		else if (ch[i] == '+' || ch[i] == '-')
 		{
-			if (ch[i - 1] == '*' || ch[i - 1] == '/')
+			Operator_Stack.Peek(&temp);
+			if (temp == '*' || temp == '/')
 			{
 				Operator_Stack.Pop(&temp);
 				Operator_Queue.Enque(temp);
 				Operator_Stack.Push(ch[i]);
 			}
-			else	Operator_Stack.Push(ch[i]);
-
-			Operator_Stack.PrintStack();
-			Operator_Queue.PrintQueue();
+			else // ( 또는 ) 일 때
+			{
+				Operator_Stack.Push(ch[i]);
+			}
 		}
 		else if (ch[i] == '*' || ch[i] == '/')
 		{
 			Operator_Stack.Push(ch[i]);
-			Operator_Stack.PrintStack();
 		}
 		else // 숫자일때
 		{
-			if (Operator_Queue.Enque(ch[i]) == "0")
+			if (48 <= ch[i - 1])
 			{
-				puts("\a오류: 인큐에 실패했습니다.");
-				break;
+				str += ch[i];
+				Operator_Queue.Peek(&temp);
+				if (48 <= temp)
+				{
+					Operator_Queue.Deque(&temp);
+					Operator_Queue.Enque(ch[i]);
+				}
 			}
-
+			else
+			{
+				str += ch[i];
+				Operator_Queue.Enque(ch[i]);
+			}
+			cout << "숫자일때 : " << endl;
 			Operator_Queue.PrintQueue();
 		}
 
 		i++;
 	}
 
-	cout << "Final Stack : "; 
+	while (!Operator_Stack.IsEmptyStack())
+	{
+		Operator_Stack.Pop(&temp);
+		Operator_Queue.Enque(temp);
+	}
+
+	cout << "Final Stack : " << endl;
 	Operator_Stack.PrintStack();
 	cout << endl;
-	cout << "Final Queue : ";
-	Operator_Queue.PrintQueue(); 
+	cout << "Final Queue : " << endl;
+	Operator_Queue.PrintQueue();
 	cout << endl;
+
+	// 계산 과정
+
+
+	////5. 큐에서 데이터를 읽어 스택으로 옮긴다. ( Operand Stack )
+	//-큐에서 값을 하나씩 읽는다.
+	//	- 피연산자 이면 스택에 저장
+	//	- 연산자 이면 스택에서 값을 두개 꺼내서 연산자에 대한 연산을 하고
+	//	그 결과를 다시 스택에 저장
+
+	//	큐에 값이 없을 때까지 5의 과정을 반복해서 최종 계산값을 구한다.
+
+	while (!Operator_Queue.IsEmptyQueue())
+	{
+		Operator_Queue.Deque(&temp);
+		if (isdigit(temp))
+		{
+			Operator_Stack.Push(temp);
+		}
+		else
+		{
+			char a, b;
+			int result;
+			Operator_Stack.Pop(&a);
+			Operator_Stack.Pop(&b);
+
+			switch (temp)
+			{
+			case '+':
+				result = a + b;
+				cout << "result = " << result << endl;
+				Operator_Stack.Push(char(result));
+				break;
+			case '-':
+				result = a - b;
+				Operator_Stack.Push(result);
+				break;
+			case '*':
+				result = a * b;
+				Operator_Stack.Push(result);
+				break;
+			case '/':
+				result = a / b;
+				Operator_Stack.Push(result);
+				break;
+			}
+		}
+	}
+
+	cout << "최종 계산값 : " << Operator_Stack.Peek(&temp) << endl;
+
+
+
+
 	return 0;
 }

@@ -10,7 +10,6 @@ string stackCalculate::InitializeStack(int max1)
 	if (stk == NULL)		return "-1"; // 할당이 잘못됐다
 	else return "Yes";
 }
-
 string stackCalculate::Push(char c)
 {
 	if (ptr >= max)	return "-1"; // 배열 사이즈를 넘었다
@@ -21,7 +20,6 @@ string stackCalculate::Push(char c)
 		return "Yes";
 	}
 }
-
 string stackCalculate::Pop(char* c)
 {
 	if (ptr <= 0)	return "-1"; // 배열에 저장된 값이 없다
@@ -32,6 +30,19 @@ string stackCalculate::Pop(char* c)
 		*c = stk[ptr];
 		return c;
 	}
+}
+string stackCalculate::Peek(char* c)
+{
+	if (ptr <= 0)		return "-1"; // 배열에 저장된 값이 없다
+	else
+	{
+		*c = stk[ptr - 1];
+		return c;
+	}
+}
+int stackCalculate::IsEmptyStack()
+{
+	return ptr <= 0;
 }
 
 string stackCalculate::InitializeQueue(int max1)
@@ -71,6 +82,10 @@ string stackCalculate::Deque(char* c)
 		if (front == max)	front = 0;
 		return c;
 	}
+}
+int stackCalculate::IsEmptyQueue()
+{
+	return num <= 0;
 }
 
 void stackCalculate::PrintStack()

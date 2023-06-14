@@ -204,6 +204,24 @@
     <ClCompile Include="20230612_stackCalculate.h">
       <Filter>헤더 파일</Filter>
     </ClCompile>
+    <ClCompile Include="20230614_use_Rectangle2D.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_Rectangle2D.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_strngbad.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_use_strngbad.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_MyPoint.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_use_MyPoint.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20230607_stock.h">
@@ -228,6 +246,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="20230612_Cirect2D.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230614_Rectangle2D.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230614_strngbad.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230614_MyPoint.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "20230612_Cirect2D.h"
+#include "20230614_MyPoint.h"
 /*
 Q2. 다음을 포함하는 Cirect2D 클래스를 정의하라.
 	- 원의 중심을 나타내는 x,y라는 두 개의 double 데이터 필드와 get 상수 함수.
@@ -92,4 +93,11 @@ bool Cirect2D::overlaps(const Cirect2D& circle)
 		else return false;
 	}
 	else return true;
+}
+
+bool contains(const Cirect2D& circle, const MyPoint& p)
+{
+	if(sqrt(pow(circle.x - p.getX(), 2) + pow(circle.y - p.getY(), 2)) <= circle.radius)
+		return true;
+	else return false;
 }

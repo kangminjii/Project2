@@ -1,4 +1,5 @@
 #pragma once
+#include "20230614_MyPoint.h"
 
 class Cirect2D
 {
@@ -22,4 +23,6 @@ public:
 	bool contains(double x, double y);
 	bool contains(const Cirect2D& circle);
 	bool overlaps(const Cirect2D& circle);
+
+	friend bool contains(const Cirect2D & circle, const MyPoint& p);
 };
