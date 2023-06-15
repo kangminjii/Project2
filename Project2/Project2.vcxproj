@@ -322,8 +322,20 @@
     <ClCompile Include="20230614_use_strngbad.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="20230615_sayings1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="20230615_sayings2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="20230615_string1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="20230615_string2.cpp" />
+    <ClCompile Include="20230615_use_string2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="20230615_string2.h" />
     <ClInclude Include="20230607_stack.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
@@ -351,6 +363,7 @@
     <ClInclude Include="20230614_MyPoint.h" />
     <ClInclude Include="20230614_Rectangle2D.h" />
     <ClInclude Include="20230614_strngbad.h" />
+    <ClInclude Include="20230615_string1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

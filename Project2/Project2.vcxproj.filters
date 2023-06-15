@@ -222,6 +222,21 @@
     <ClCompile Include="20230614_use_MyPoint.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="20230615_string1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230615_sayings1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230615_sayings2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230615_string2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230615_use_string2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20230607_stock.h">
@@ -255,6 +270,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="20230614_MyPoint.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230615_string1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230615_string2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
