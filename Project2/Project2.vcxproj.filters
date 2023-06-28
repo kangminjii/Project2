@@ -24,12 +24,6 @@
     <ClCompile Include="20230525_Q2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="20230525_Q3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="20230525_Q4.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="20230526.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
